@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
-void main()
-{
+
+void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu),
+          title: Text("Flutetr App"),
           centerTitle: true,
-          title: Icon(Icons.search),
-          actions: [
-            Icon(Icons.inbox),
-          ],
+          leading: Icon(Icons.menu),
+          backgroundColor:Colors.yellow ,
         ),
-        body: Text(
-          "hello\nwoeld",
+        body: Center(
+          child: Text(
+            "Red & white",
+            style: TextStyle(
+              fontSize: 50,color: Colors.red,
+              decoration: TextDecoration.underline,
+            ),
+          ),
+
         ),
       ),
     ),
